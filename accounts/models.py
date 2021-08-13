@@ -2,6 +2,11 @@ from django.db import models
 from django.contrib.auth.models import User
 
 # Create your models here.
+#
+# superusers = User.objects.filter(is_superuser=True)
+# print(superusers)
+# last_time = User.objects.get(is_superuser=True).last_login
+# print(last_time)
 
 
 class Customer(models.Model):
